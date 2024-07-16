@@ -77,10 +77,10 @@ export default function packagePage() {
                 <div class="footer-sosial-media">
                     <h3>Sosial Media</h3>
                     <ul>
-                        <li><a href="">Facebook</a></li>
-                        <li><a href="">Instagram</a></li>
-                        <li><a href="">Github</a></li>
-                        <li><a href="">Tiktok</a></li>
+                        <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                        <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="https://github.com/MJAZain/Projek-Capstone-BDT24-FS037" target="_blank" rel="noopener noreferrer">Github</a></li>
+                        <li><a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">Tiktok</a></li>
                     </ul>
                 </div>
             </div>
