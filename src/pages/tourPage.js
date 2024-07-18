@@ -145,7 +145,7 @@ export function initTourPage() {
                 console.log('Order button clicked for tour:', tour._id);
                 if (userEmail && authToken) {
                     console.log('Placing order with email:', userEmail, 'authToken:', authToken);
-                    fetch('http://localhost:5000/api/order-tours', {
+                    fetch('http://localhost:5000/api/order-tours/place-order', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
@@ -157,6 +157,7 @@ export function initTourPage() {
                         }),
                     })
                     .then(response => {
+                        console.log('Response status:', response.status); // Debug log
                         if (!response.ok) {
                             if (response.status === 400) {
                                 return response.json().then(data => {
@@ -186,6 +187,7 @@ export function initTourPage() {
                     showToast('User email or auth token not found in localStorage.');
                 }
             });
+            
             tourDiv.appendChild(orderButton);
 
             toursContainer.appendChild(tourDiv);
